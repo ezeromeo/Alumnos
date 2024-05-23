@@ -1,0 +1,237 @@
+
+
+
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column !important;
+    min-height: 90vh;
+
+}
+
+.circle {
+    width: 50px;  
+    height: 50px; 
+    background-color: #85BECE; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    
+    width: 80%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+
+p {
+    text-align: justify;
+    margin: 15px;
+}
+
+
+button {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.textoIcono p{
+    color: var(--blanco, #FFF);
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 15px;
+}
+
+.header{
+    background-color: #2F647E;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.subheader, .footerIcons, footer{
+    background-color: #428BA9;
+    width: 100%;
+}
+
+.form-select{
+    width: fit-content !important;
+}
+
+.entrada, .salida{
+    display: flex;
+    width: 142.868px;
+    height: 45.805px;
+    padding: 9px 20px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 30px;
+
+}
+
+.entradaTexto div{
+    color: #74B160;
+}
+
+.salidaTexto div{
+    color: #DF1517;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+}
+
+.qrCode img {
+    width: 350px;
+    height: 350px;
+}
+
+footer{
+    min-height: 100px;
+}
+
+.bellIcon {
+    position: relative;
+    display: inline-block;
+}
+
+.bellIcon img {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.bellIcon .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.footerIcons p{
+    color: white;
+}
+
+.entrar button{
+    background-color: #2F647E;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    width: 170px;
+    height: 42px;
+    padding: 9px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.acepto button, .acepto button:focus{
+    background-color: #2F647E;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    width: 170px;
+    height: 42px;
+    padding: 9px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.entrar p{
+    color: var(--Principal, #2F647E);
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+.credenciales{
+    color: var(--Texto, #53565A);
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.form-control{
+    border-radius: 7px !important;
+    border: 1px solid #F5F5F5 !important;
+    background: #F5F5F5 !important;
+}
+
+.consentimiento{
+    color: var(--Texto, #53565A);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.horario, .horariosMT img, .horariosMT p:nth-child(2){
+    margin-bottom: 15px;
+}
+
+.mes p{
+    color: #428BA9;
+}
+
+.modal-dialog {
+    max-width: 150%;
+    width: auto !important;
+}
+
+.modal-content{
+    width: 600px !important;
+}
+
+.modal-body {
+    overflow-x: auto;
+}
+
+.festivo {
+    color: #FFAAAB;
+}
+
+td.festivo{
+    background-color: #D0D0D0;
+}
+

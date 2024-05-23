@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Aplicación Móvil</title>
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="body">
+        <div class="header d-flex align-items-center justify-content-around">
+            <div class="textoIcono d-flex align-items-center justify-content-center">
+                <div class="circle">
+                    <img src="/assets/img/Layer_1.svg" alt="">
+                </div>
+                <p>Alumno</p>
+            </div>
+            <select name="" id="" class="form-select">
+                <option value="Hoy" selected>Hoy</option>
+            </select>
+        </div>
+        <div class="subheader d-flex align-items-center justify-content-around pt-3 pb-3">
+            <div class="entrada d-flex align-items-center justify-content-between">
+                <img src="/assets/img/check.svg" alt="">
+                <div class="entradaTexto">
+                    <div class="texto">Entrada</div>
+                    <div class="hora">09:01:23</div>
+                </div>
+            </div>
+            <div class="salida d-flex align-items-center justify-content-between">
+                <img src="/assets/img/x.svg" alt="">
+                <div class="salidaTexto">
+                    <div class="textoSalida">Salida</div>
+                    <div class="estadoTextoSalida">Pendiente</div>
+                </div>
+            </div>
+        </div>
+        <div class="logoIformalia mt-4">
+            <img src="/assets/img/logo_iformalia.svg" alt="">
+        </div>
+        <form class="mt-5">
+            <p class="credenciales">Acceder con credenciales</p>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Usuario</label>
+              <input type="email" class="form-control" placeholder="Usuario" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" placeholder="Contraseña" id="exampleInputPassword1">
+            </div>
+        </form>
+        <div class="entrar d-flex align-items-center justify-content-center flex-column">
+            <button id="entrarBtn" class="btn d-flex align-items-center justify-content-center">Entrar</button>
+            <p>O por:</p>
+            <img src="/assets/img/fingerprint.svg" alt="">
+            <div class="form-check consentimiento mb-3">
+                <input type="checkbox" class="form-check-input" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault" id="openModalLabel">
+                    Acepto consentimiento RGPD
+                </label>            
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerIcons d-flex align-items-center justify-content-around pt-3">
+            <div class="bellIcon d-flex align-items-center justify-content-center flex-column mb-3" 
+                id="bellIconPopover" data-bs-toggle="popover" data-bs-html="true" data-bs-content="<ul><li>Inicio curso curso de PRL avanzado en la oficina</li><li>Firma curso de PRL avanzado en la oficina</li></ul>" 
+                data-bs-trigger="click">
+                <img src="/assets/img/bell.svg" alt="">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
+            </div>
+
+            <div class="solicitarQr d-flex align-items-center justify-content-center flex-column" id="openSolicitarQrModal">
+                <img src="/assets/img/solcitarQr.svg" alt="">
+                <p>Solicitar QR</p>
+            </div>
+            <div class="asistencia d-flex align-items-center justify-content-center flex-column" id="openAsistenciaModal">
+                <img src="/assets/img/asistencia.svg" alt="">
+                <p>Asistencia</p>
+            </div>            
+            <div class="chatbot d-flex align-items-center justify-content-center flex-column" id="openChatbotModal">
+                <img src="/assets/img/chatbot.svg" alt="">
+                <p>ChatBot</p>
+            </div>
+            <div class="desconectar d-flex align-items-center justify-content-center flex-column" id="disconnect">
+                <img src="/assets/img/desconectar.svg" alt="">
+                <p>Desconectar</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+<div class="modal fade" id="rgpdModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-asistencia">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>El abajo firmante declara que los datos declarados se corresponden con la realidad, y en la presente convocatoria, no participa en otra acción formativa de igual contenido a la solicitada. ​
+            Información básica sobre protección de datos Asimismo, conforme al Reglamento (UE) 2016/679 del Parlamento Europeo y del
+            Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de
+            datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (RGPD) así como en
+            la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales,
+            declara y manifiesta ante la entidad beneficiaria que da su consentimiento en los términos previstos en el artículo 7
+            RGPD, para que sus datos sean tratados por el beneficiario de la subvención a efectos de la ejecución y justificación de
+            los programas de formación subvencionados, así como por el Servicio Público de Empleo Estatal, en su condición de
+            responsable del tratamiento de los datos personales que aquí se proporcionan con la finalidad de gestionar las tareas
+            derivadas de la solicitud, gestión, financiación, justificación, control, seguimiento y evaluación de éstas y, en su
+            caso, cederlos a los Organismos previstos a efectos de completar su gestión. El interesado podrá ejercitar sus derechos
+            de acceso, rectificación, supresión y portabilidad de sus datos, limitación y oposición al tratamiento, así como a no
+            ser objeto de decisiones basadas únicamente en el tratamiento automatizado de sus datos, cuando procedan, ante el
+            responsable del tratamiento, mediante notificación por escrito dirigida al Servicio Público de Empleo Estatal, en calle
+            Condesa de Venadito, n.º 9. 28027 Madrid o a través del correo electrónico de su Delegado de protección de
+            datos: dpd@mitramiss.es</p>
+        </div>
+        <div class="modal-footer acepto d-flex align-items-center justify-content-center flex-column">
+            <button class="btn d-flex align-items-center justify-content-center">Acepto</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="asistenciaModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">Asistencia</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mes d-flex align-items-center justify-content-center">
+                <img src="/assets/img/chevron-left.svg" alt="">
+                <p class="mt-3">MARZO 2024</p>
+                <img src="/assets/img/chevron-right.svg" alt="">
+            </div>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">FECHA</th>
+                    <th scope="col">DÍA</th>
+                    <th scope="col">HORARIO</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="chatbotModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Actualmente el ChatBot no está activo en el modo demo</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="solicitarQrModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Hemos solicitado al Formador que te muestre el QR de Entrada, para que puedas registrar la entrada a clase.</p>
+            </div>
+        </div>
+    </div>
+</div>
+  
+</html>
