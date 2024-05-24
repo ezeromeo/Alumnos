@@ -102,13 +102,36 @@ button {
     color: #DF1517;
 }
 
+.redirectHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width: 900px){
+    .redirectHeader{
+        display: none;
+    }
+}
+
 @media (max-width: 600px) {
     .container {
         width: 100%;
         margin: 0;
         box-shadow: none;
     }
+    .redirectHeader{
+        display: none;
+    }
 }
+
+@media (max-width: 300px) {
+    .redirectHeader{
+        display: none;
+    }
+}
+
+
 
 .qrCode img {
     width: 350px;
@@ -154,4 +177,59 @@ footer{
     gap: 10px;
     margin-top: 100px;
 
+}
+
+.upBreadcrumb{
+    color: #53565A;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.upBreadcrumb a, .upBreadcrumb a:hover, .upBreadcrumb a:focus{
+    text-decoration: none;
+    color: #53565A;
+}
+
+.downBreadcrumb p:nth-child(1){
+    color: #53565A;
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.downBreadcrumb p:nth-child(2){
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.right p{
+    color: var(--Texto, #53565A);
+    text-align: center;
+    font-family: Lato;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 11px;
+    letter-spacing: 0.417px;
+}
+
+.alumnoIcono{
+    border-radius: 6px;
+    background: var(--Principal, #2F647E);
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+
+}
+
+.bellIcon, .chatbotAyuda, .alumnoMenu, .desconectarHeader{
+    cursor: pointer;
 }
